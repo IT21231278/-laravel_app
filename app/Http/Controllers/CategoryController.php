@@ -14,7 +14,7 @@ class CategoryController extends Controller
     {
         $category = Category::orderBy('created_at', 'DESC')->get();
   
-        return view('categories.index', compact('category'));
+        return view('category.index', compact('category'));
     }
   
     /**
