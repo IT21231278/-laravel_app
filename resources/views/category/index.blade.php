@@ -5,7 +5,7 @@
 @section('contents')
     <div class="d-flex align-items-center justify-content-between">
         <h1 class="mb-0">List Category</h1>
-        <a href="{{ route('categories.create') }}" class="btn btn-primary">Add Category</a>
+        <a href="{{ route('category.create') }}" class="btn btn-primary">Add Category</a>
     </div>
     <hr />
     @if(Session::has('success'))
