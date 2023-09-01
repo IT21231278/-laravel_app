@@ -42,7 +42,7 @@ class CategoryController extends Controller
     {
         $category= Category::findOrFail($id);
   
-        return view('categories.show', compact('category'));
+         return view('category.show', compact('category'));
     }
   
     /**
@@ -52,7 +52,7 @@ class CategoryController extends Controller
     {
         $category = Category::findOrFail($id);
   
-        return view('categories.edit', compact('category'));
+         return view('category.edit', compact('category'));
     }
   
     /**
@@ -64,7 +64,7 @@ class CategoryController extends Controller
   
         $category->update($request->all());
   
-        return redirect()->route('Categories')->with('success', 'Category updated successfully');
+        return redirect()->route('Category')->with('success', 'Category updated successfully');
     }
   
     /**
@@ -76,6 +76,6 @@ class CategoryController extends Controller
   
         $category->delete();
   
-        return redirect()->route('categories')->with('success', 'category deleted successfully');
+        return redirect()->route('category')->with('success', 'category deleted successfully');
     }
 }
