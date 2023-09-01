@@ -67,8 +67,8 @@ https://templatemo.com/tm-541-host-cloud
           </div>
           <div class="functional-buttons">
             <ul>
-              <li><a href="#">Log in</a></li>
-              <li><a href="#">Sign Up</a></li>
+              <li><a href="{{ route('login')}}">Log in</a></li>
+              <li><a href="{{ route('register')}}">Sign Up</a></li>
             </ul>
           </div>
         </div>
