@@ -4,9 +4,15 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CategoryController;
- 
-Route::get('/', function () {
-    return view('welcome');
+use App\Http\Controllers\HomeController;
+
+
+
+
+
+Route::get('/',function()
+{
+    return view('home');
 });
  
 Route::controller(AuthController::class)->group(function () {
@@ -46,3 +52,9 @@ Route::middleware('auth')->group(function () {
  
     Route::get('/profile', [App\Http\Controllers\AuthController::class, 'profile'])->name('profile');
 });
+
+
+
+
+/*Route::get("/home",[HomeController::class,"index"]);
+*/
