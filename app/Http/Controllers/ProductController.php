@@ -70,7 +70,7 @@ class ProductController extends Controller
   
         $product->update($request->all());
   
-        return redirect()->route('products')->with('success', 'product updated successfully');
+        return redirect()->route('products')->with('success', 'Product updated successfully');
     }
   
     /**
@@ -82,6 +82,6 @@ class ProductController extends Controller
   
         $product->delete();
   
-        return redirect()->route('products')->with('success', 'product deleted successfully');
+        return redirect()->route('products')->with('success', 'Product deleted successfully');
     }
 } 
